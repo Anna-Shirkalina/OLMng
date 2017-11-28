@@ -1,0 +1,62 @@
+// Passive parameters
+PARAM_g_pas=9.242697014e-06
+PARAM_Ra=285.7836439
+PARAM_cm=0.2799404308
+
+/*
+ * The passive reversal potential (e_pas) helps determine Vm at rest. e_pas
+ * was fitted using the same recordings from which the other passive parameters
+ * were acquired. However, since the passive leak and reversal potential are
+ * "catch-all" parameters for other conductances that may be active at rest, the
+ * values obtained may not reproduce the resting Vm during the recordings where
+ * no voltage-gated channels were blocked, i.e., to measure action potentials.
+ * Since this model incorporates active channels, its resting Vm needed to 
+ * correspond to those recordings. Thus, e_pas needed to be overridden to fit the
+ * earlier experimental traces prior to TTX/4-AP/TEA blocker application. 
+ * However, for reference, the original fitted e_pas is provided though it is 
+ * commented out.
+ */
+//PARAM_e_pas=-54.74519964
+PARAM_e_pas=-73.588
+
+// Ih parameters
+PARAM_Ih_eh = -27.9456
+PARAM_Ih_v_half = -100.105
+PARAM_Ih_k = 11.16
+PARAM_Ih_Gh_tot = 3.6412
+
+PARAM_Ih_t1 = 8.981
+PARAM_Ih_t2 = 0.03574
+PARAM_Ih_t3 = -8.495
+PARAM_Ih_t4 = 0.187
+PARAM_Ih_t5 = 3.575e-07
+
+// Ih distribution variable 
+PARAM_H_dist = 1175.0
+
+// Morphological information
+PARAM_NUMSEC_SOMA=6
+PARAM_NUMSEC_DEND=117
+PARAM_NUMSEC_AXON=7
+
+// Maximum conductance densities for active channels
+Nas=240
+Nad=250
+Kdrf=506
+Kdrs=25
+KA=2.5
+CaL=50
+CaT=2.5
+AHP=2.75
+M=0.375
+/*
+Nas=0
+Nad=0
+Kdrf=0
+Kdrs=0
+KA=0
+CaL=0
+CaT=0
+AHP=0
+M=0
+*/
