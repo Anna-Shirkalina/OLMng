@@ -1,12 +1,6 @@
 load_file("nrngui.hoc")
 load_file("sim_params.hoc")
-
-strdef cellname
-if (cell == 1) {
-    load_file("morph/Gormadoc.hoc")
-    load_file("param_files/model_Gormadoc.hoc")
-    cellname = "Gormadoc"
-}
+load_file("cell_selector.hoc")
 load_file("param_active_cond.hoc")
 load_file("params.hoc")
 load_file("AP_clamp.hoc")
