@@ -45,3 +45,7 @@ per-cell parameter files within the "param_files" directory. The ones in
 sim_params.hoc are particularly relevant for global aspects of operation
 such as length of simulation, integration method, current clamp injection
 parameters, etc. 
+
+Changelog
+---------
+2019-01-24  Snapshot of original code submission.
