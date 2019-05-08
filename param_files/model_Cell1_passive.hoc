@@ -1,0 +1,47 @@
+PARAM_ic_hold_amp=0.0025
+
+PARAM_g_pas=7.933014264e-06
+PARAM_e_pas=-49.05200155
+PARAM_Ra=141.8532962
+PARAM_cm=0.2698989061
+
+PARAM_Ih_eh = -34.0056 // -34.0056
+PARAM_Ih_v_half = -103.44 // -103.44
+PARAM_Ih_k = 8.63
+PARAM_Ih_Gh_tot = 4.1742
+
+PARAM_Ih_t1 = 8.035
+PARAM_Ih_t2 = 0.02565
+PARAM_Ih_t3 = -4.404 //-4.404
+PARAM_Ih_t4 = 0.146
+PARAM_Ih_t5 = 7.321e-06
+
+PARAM_H_dist = 1021.3
+
+PARAM_e_pas = -73.588
+PARAM_g_KL = 9.9005e-10   // mho/cm2
+
+PARAM_NUMSEC_SOMA=3
+PARAM_NUMSEC_DEND=99
+PARAM_NUMSEC_AXON=7
+
+/*
+Nas=250
+Nad=260
+Kdrf=506
+Kdrs=25
+KA=2.5
+CaL=50
+CaT=2.5
+AHP=2.75
+M=0.375
+*/
+Nas=0
+Nad=0
+Kdrf=0
+Kdrs=0
+KA=0
+CaL=0
+CaT=0
+AHP=0
+M=0

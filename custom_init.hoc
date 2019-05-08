@@ -1,0 +1,12 @@
+proc init() {
+    // optimizer adjusts KA, Kdrs, Nas, Nap, Kdrf, M, AHP, CaT, CaL, and PARAM_ic_step_amp      
+	set_gbars()
+				
+    finitialize(v_init)
+    if (cvode.active()) {
+      cvode.re_init()
+    } else {
+      fcurrent()
+    }
+    frecord_init()
+}
