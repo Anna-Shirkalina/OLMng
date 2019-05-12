@@ -28,9 +28,9 @@ paramtype - one of 1 (passive), 2 (passive + Ih), or 3 (passive + Ih + spiking
 
 modeltype - only used by the spiking model cells (1 and 2), corresponding to
     the five different spiking parameter sets to choose from (i.e. the top
-    five models from the. To specify which spiking model, set the "modelnum"
-    parameter on line 3 to any value between 1 and 5 (in order from highest
-    ranked to fifth-ranked).
+    five models from the multi-objective optimization). To specify which 
+    spiking model, set the "modelnum" parameter on line 3 to any value between
+    1 and 5 (in order from highest ranked to fifth-ranked).
 
 Model invocation
 ----------------
