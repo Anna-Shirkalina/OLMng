@@ -12,12 +12,12 @@ h.load_file("init_model.hoc")
 
 cell = h.cell
 if cell == 1:
-    cellname = 'Gormadoc'
+    cellname = 'Cell1'
     DNQX_Hold = 0.004
     h.ic_hold.amp = DNQX_Hold
     TTX_Hold = -0.0290514
 elif cell == 2:
-    cellname = 'Isembard'
+    cellname = 'Cell2'
     DNQX_Hold = -0.005
     h.ic_hold.amp = DNQX_Hold
     TTX_Hold = -0.0508
