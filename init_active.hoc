@@ -5,7 +5,6 @@ for i=0,PARAM_NUMSEC_SOMA-1 soma[i] {
 	insert Ikdrs
 	insert Ika
 	insert Nasoma
-	insert Ih
 	ena=90
 	ek=-95
 }
@@ -21,9 +20,8 @@ for i=0,PARAM_NUMSEC_DEND-1 dend[i] {
 	insert cat
 	insert kca
 	insert Nadend
-    insert Ih
-	ek=-95
 	ena=90
+	ek=-95
 }
 
 for i=0,PARAM_NUMSEC_AXON-1 axon[i] {

@@ -16,31 +16,33 @@ state activation function, time dependency of activation and deactivation, and
 reversal potential) should remain fixed as they have been determined directly
 from recordings.
 
-Specifying which model
-----------------------
-In the respective init_modelXX.hoc file change the "cell" parameter on line 2
-to one of "1", "2", or "3", corresponding to the Cell from the accompanying
-paper. For the spiking model cells (1 and 2), there are currently five
-different models to choose from (i.e. the top five models from the
-multi-objective optimization). To specify which model, set the "modelnum"
-parameter on line 3 to any value between 1 and 5 (in order from highest ranked
-to fifth-ranked).
+Specifying which cell and model
+-------------------------------
+In the init_model.hoc file there are three parameters to define the model:
+
+cell - one of 1, 2, or 3, corresponding to the three reconstructed cells in the
+    paper
+
+paramtype - one of 1 (passive), 2 (passive + Ih), or 3 (passive + Ih + spiking
+    currents)
+
+modeltype - only used by the spiking model cells (1 and 2), corresponding to
+    the five different spiking parameter sets to choose from (i.e. the top
+    five models from the. To specify which spiking model, set the "modelnum"
+    parameter on line 3 to any value between 1 and 5 (in order from highest
+    ranked to fifth-ranked).
 
 Model invocation
 ----------------
 Use nrngui or nrniv as follows:
 
-PASSIVE MODEL:
+    nrngui init_model.hoc
 
-    nrngui -c init_model_passive.hoc
+The parameters specified in the previous section can also be commented out and
+provided during model invocation on the command-line using the -c switches for
+nrngui or nrniv, e.g.,
 
-PASSIVE MODEL + Ih:
-
-    nrngui -c init_model_Ih.hoc
-
-PASSIVE MODEL + Ih + SPIKING CURRENTS:
-
-    nrngui -c init_model.hoc
+    nrngui -c 'cell=1' -c 'paramtype=3' -c 'modelnum=1' init_model.hoc
 
 (Spiking models only) run current-clamp protocols and plot the currentscapes
 ----------------------------------------------------------------------------

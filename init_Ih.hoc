@@ -1,10 +1,17 @@
 /*
  * Meant to be called from init()
- * - requires init_active() (which inserts Ih)
  * - requires Ih parameters (defined in params.hoc)
  */
 
-// First determine gkhbar based on H_dist
+// First insert Ih into sections
+for i=0,PARAM_NUMSEC_SOMA-1 soma[i] {
+        insert Ih
+}
+for i=0,PARAM_NUMSEC_DEND-1 dend[i] {
+        insert Ih
+}
+
+// Determine gkhbar based on H_dist
 soma[0] distance()
 H_area = 0
 forall {

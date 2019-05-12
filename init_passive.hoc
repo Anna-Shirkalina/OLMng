@@ -1,5 +1,5 @@
 for i=0,PARAM_NUMSEC_SOMA-1 soma[i] {
-	insert passsd
+    insert passsd
     g_passsd=G_pas
     erev_passsd=E_pas
     Ra = Ri
@@ -7,7 +7,7 @@ for i=0,PARAM_NUMSEC_SOMA-1 soma[i] {
 }
 
 for i=0,PARAM_NUMSEC_DEND-1 dend[i] {
-	insert passsd
+    insert passsd
     g_passsd=G_pas
     erev_passsd=E_pas
     Ra = Ri

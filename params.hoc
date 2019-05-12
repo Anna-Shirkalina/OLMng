@@ -4,7 +4,7 @@
  *  param_files/model_<cellname>.hoc
  */
  
-// These do not vary per cell, for now.
+// These do not vary per cell.
 celsius=34
 v_init=-74
 
@@ -12,18 +12,20 @@ Ri = PARAM_Ra         // ohm cm
 Cm = PARAM_cm         // uf/cm2
 G_pas = PARAM_g_pas   // ohm cm2
 E_pas = PARAM_e_pas   // mV
-H_dist = PARAM_H_dist  // um
 
 NOT_YET_DISPLAYED = 1
 
 proc init() {
 
     xopen("init_passive.hoc")
-    if (INSERT_ACTIVES) {
-        xopen("init_active.hoc")
+    if (INSERT_IH) {
+        H_dist = PARAM_H_dist  // um
         xopen("init_Ih.hoc")
     }
-	dt = 0.1
+    if (INSERT_ACTIVES) {
+        xopen("init_active.hoc")
+    }
+
     finitialize(v_init)
     if (cvode.active()) {
       cvode.re_init()

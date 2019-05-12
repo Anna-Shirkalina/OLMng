@@ -1,23 +1,27 @@
+// Experimental parameters
+PARAM_ic_hold_amp=0.000272042 // -120 pA TTX
+
 // Passive parameters
-PARAM_g_pas=7.480611878e-06
-PARAM_e_pas=-69.16781242
-PARAM_Ra=94.83941635
-PARAM_cm=0.3057478028
+PARAM_g_pas=8.6834e-06
+PARAM_e_pas=-76.1056
+PARAM_Ra=317.954
+PARAM_cm=0.587352
 
 // Ih parameters
-PARAM_Ih_eh = -25.2203
-PARAM_Ih_v_half = -111.27
-PARAM_Ih_k = 6.883
+PARAM_Ih_eh = -25.22
+PARAM_Ih_v_half = -113.873
+PARAM_Ih_k = 9.99509
+PARAM_Ih_Gh_tot = 1.82879
 
-// Ih distribution variable 
-PARAM_Ih_Gh_tot = 2.6291
-PARAM_H_dist = 0
+PARAM_Ih_t1 = 41.8465
+PARAM_Ih_t2 = 0.293799
+PARAM_Ih_t3 = -4.03526
+PARAM_Ih_t4 = 0.0895805
+PARAM_Ih_t5 = 4.29888
 
-PARAM_Ih_t1 = 35.09
-PARAM_Ih_t2 = 0.2453
-PARAM_Ih_t3 = 4.277 // -4.277
-PARAM_Ih_t4 = 0.08846
-PARAM_Ih_t5 = 69.72
+PARAM_H_dist = 1090
 
-PARAM_H_dist = 1250
-PARAM_Gh = 1.06309e-05
+// Morphological information
+PARAM_NUMSEC_SOMA=6
+PARAM_NUMSEC_DEND=41
+PARAM_NUMSEC_AXON=16

@@ -1,8 +1,11 @@
+// Experimental parameters
+PARAM_ic_hold_amp=0.00516419 // -120 pA DNQX
+
 // Passive parameters
 PARAM_g_pas=1.19042e-05
+PARAM_e_pas=-61.835
 PARAM_Ra=348.19
 PARAM_cm=0.38035601
-PARAM_e_pas=-61.835
 
 // Ih parameters
 PARAM_Ih_eh = -27.9
