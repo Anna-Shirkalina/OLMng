@@ -57,3 +57,10 @@ per-cell parameter files within the "param_files" directory. The ones in
 sim_params.hoc are particularly relevant for global aspects of operation
 such as length of simulation, integration method, current clamp injection
 parameters, etc. 
+
+Experimental data
+-----------------
+Current-clamp traces under synaptic blocker wash-in conditions for cells 1 and
+2 can be found in the respective CellX_exp_data/ directories. These traces are
+needed for plotting currentscapes for the spiking models. The injected current
+amplitude is included in the filename.
