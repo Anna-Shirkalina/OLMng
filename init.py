@@ -9,6 +9,9 @@ from currents_visualization import plotCurrentscape
 
 ### Instantiate Model ###
 h.load_file("init_model.hoc")
+h.cvode_active(0) 
+h.dt = 0.1 
+h.steps_per_ms = 10
 
 cell = h.cell
 if cell == 1:

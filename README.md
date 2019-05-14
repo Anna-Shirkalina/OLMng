@@ -62,5 +62,6 @@ Experimental data
 -----------------
 Current-clamp traces under synaptic blocker wash-in conditions for cells 1 and
 2 can be found in the respective CellX_exp_data/ directories. These traces are
-needed for plotting currentscapes for the spiking models. The injected current
+needed for init.py to run for the spiking models, but can be commented out if
+only running init.py to obtain the currentscape plots. The injected current
 amplitude is included in the filename.
